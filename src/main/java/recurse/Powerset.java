@@ -12,6 +12,7 @@ public class Powerset {
 	 1 x { 2, 3, {2,3}} -> 1, 2, 3, {2,3}, {1,2}, {1,3}, {1,2,3}
 	 
 	 */
+	@SuppressWarnings("unchecked")
 	static List<Object> innerPowerset(List<Object> inset){
 		int sz = inset.size();
 		if ( sz == 0 || sz == 1 ){
